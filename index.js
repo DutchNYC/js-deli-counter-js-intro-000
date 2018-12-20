@@ -25,3 +25,35 @@ function nowServing(katzDeliLine){
   return "The line is currently: " +array.join(", ")
 }
 }
+
+
+var i=1 //TEST: you can delete this
+function takeANumber(katzDeliLine){
+  katzDeliLine.push(i++)
+  return ('Welcome, you are ticket number' + i)
+}
+
+function nowServing(katzDeliLine){
+  if(katzDeliLine.length===0){
+    return('There is nobody waiting to be served')
+  }else{
+    return('Currently serving ticket number'+ katzDeliLine.shift())
+  }
+}
+
+
+
+var i=1 //TEST: you can delete this
+function takeANumber(katzDeliLine){
+  i++
+  katzDeliLine.push(i)
+  return ('Welcome, you are ticket number' + i)
+}
+
+function nowServing(katzDeliLine){
+  if(katzDeliLine.length===0){
+    return('There is nobody waiting to be served')
+  }else{
+    return('Currently serving ticket number'+ katzDeliLine.shift())
+  }
+}
